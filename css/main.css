@@ -1,11 +1,93 @@
+@charset "utf-8";
 body {
-	/*margin & padding */
-	margin: 0;
-	padding: 0;
-	/*Text*/
+	margin: 0px;
+	padding: 0px;
 	font-size: 100%;
 	font-weight: 400;
-	font-family: 'Source Sans Pro', 'Trebuchet MS', Veranda, Arial, Helvetica, 'sans-serif';
-	color:#000;
-	background-color: #FFF;
+	font-style: normal;
+	font-family: source-sans-pro, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	line-height: 140%;
+	width: 100%;
+	color: 000000;
+}header {
+	height: 200px;
+	position: relative;
+	color: white;
+	background-color: #009900;
+	background-image: url(../images/fern.png);
+	background-position: 47% 0%;
+	background-size: auto 90%;
+	background-repeat: no-repeat;
+	background-origin: padding-box;
+	background-attachment: scroll;
+	text-align: center;
+}
+header h1 {
+	font-size: 400%;
+	line-height: 1.2em;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color: #00FF00;
+	text-align: center;
+	padding-top: 0.75em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: baseline;
+	text-shadow: 0px 0px 30px #000000;
+}
+header p {
+	margin-top: 2em;
+	line-height: 0.5em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+}
+.alt-text {
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote {
+	padding-left:  0px 15px;
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+a img {
+	border: none;
+}
+
+a:link {
+	color: #143d9d;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #566884;
+	text-decoration: none;
+}
+
+.top_menu{
+	width: 100%;
+	text-align: center;
+}
+
+.top_menu ul {
+	list-style-type: none;
+	width: 57em;
+	position: relative;
+	margin: 0 auto;
+}
+
+.top_menu li {
+	float: left;
+	display: block;
+	margin: 0;
+}
+
+.nav_link:link, .nav_link:visited {
+	padding: 0 0.5em;
+	width: 7em;
+	height: auto;
+	display: block;
+	text-decoration: none;
+	line-height: 3em;
 }
