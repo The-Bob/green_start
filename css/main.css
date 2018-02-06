@@ -10,21 +10,21 @@ body {
 	width: 100%;
 	color: 000000;
 }
-
 header {
-	height: 200px;
-	position: relative;
-	color: white;
-	background-color: #009900;
-	background-image: url(../images/fern.png);
-	background-position: 47% 0%;
-	background-size: auto 90%;
-	background-repeat: no-repeat;
-	background-origin: padding-box;
-	background-attachment: scroll;
-	text-align: center;
+    height: 200px;
+    position: relative;
+    color: white;
+    background-image: url(../images/fern.png), -webkit-linear-gradient(270deg,rgba(0,102,0,1.00) 0.83%,rgba(0,153,0,1.00) 100%);
+    background-image: url(../images/fern.png), -moz-linear-gradient(270deg,rgba(0,102,0,1.00) 0.83%,rgba(0,153,0,1.00) 100%);
+    background-image: url(../images/fern.png), -o-linear-gradient(270deg,rgba(0,102,0,1.00) 0.83%,rgba(0,153,0,1.00) 100%);
+    background-image: url(../images/fern.png), linear-gradient(180deg,rgba(0,102,0,1.00) 0.83%,rgba(0,153,0,1.00) 100%);
+    background-position: 47% 0%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-attachment: scroll;
+    text-align: center;
 }
-
 header h1 {
 	font-size: 400%;
 	line-height: 1.2em;
@@ -37,7 +37,6 @@ header h1 {
 	vertical-align: baseline;
 	text-shadow: 0px 0px 30px #000000;
 }
-
 header p {
 	margin-top: 2em;
 	line-height: 0.5em;
@@ -45,11 +44,9 @@ header p {
 	text-transform: uppercase;
 	letter-spacing: 0.5em;
 }
-
 .alt-text {
 	color: white;
 }
-
 h1, h2, h3, h4, h5, h6, blockquote, p {
     padding-left: 15px;
     padding-right: 15px;
@@ -59,31 +56,32 @@ h1, h2, h3, h4, h5, h6, blockquote, p {
 	margin-bottom: .5em;
 }
 
-a img {border: none; /*Mr. NOble Rocks */
+.content h1 {
+	font-family: "patua-one";
 }
-
+a img {border: none;
+}
 a:link {
     color: #143D9D;
     text-decoration: underline;
 }
-
 a:visited {
     color: #566884;
     text-decoration: underline;
 }
-
 .top_menu {
-	width: 100%;
-	margin-bottom: 20px;
-	text-align: center;
-	border-bottom: medium none;
-	border-top: #FFDD55 solid 5px;
-	overflow: auto;
-	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-	background-color: #006699;
- 	background: linear-gradient(rgba(0,102,153,1.0), rgba(0,136,170,1.0));
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+    border-top: 5px solid #FFDD55;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.60);
+    background-color: #006699;
+    background-image: -webkit-linear-gradient(270deg,rgba(0,102,153,1.00) 0.41%,rgba(0,136,170,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(0,102,153,1.00) 0.41%,rgba(0,136,170,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(0,102,153,1.00) 0.41%,rgba(0,136,170,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,102,153,1.00) 0.41%,rgba(0,136,170,1.00) 100.00%);
 }
-
 .top_menu ul {
     list-style-type: none;
     width: 57em;
@@ -93,16 +91,6 @@ a:visited {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-
-.top_menu ul li {
-    display: block;
-    float: left;
-	border-top: 1px solid #00AAEE;
-	border-right: 1px solid #002244;
-	border-bottom: 1px solid #002244;
-	border-left: 1px solid #00AAEE;
-}
-
 .top_menu ul li a:link, .top_menu ul li a:visited {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -110,46 +98,78 @@ a:visited {
     display: block;
     line-height: 3em;
     text-decoration: none;
-	color: #ffffcc;
+    color: #FFFFCC;
 }
-
+.top_menu ul li {
+    display: block;
+    float: left;
+	border-top: 1px solid #00AAEE;
+    border-right: 1px solid #002244;
+    border-bottom: 1px solid #002244;
+    border-left: 1px solid #00AAEE;
+}
 .top_menu ul li a:hover {
-	background: linear-gradient(rgba(0,136,170,1.0), rgba(0,102,153,1.0));
-	color: #FFF;
+    color: white;
+    background-image: -webkit-linear-gradient(270deg,rgba(0,136,170,1.00) 0%,rgba(0,102,153,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(0,136,170,1.00) 0%,rgba(0,102,153,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(0,136,170,1.00) 0%,rgba(0,102,153,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,136,170,1.00) 0%,rgba(0,102,153,1.00) 100.00%);
 }
-
 .sidebar1 {
-	border-top: solid 5px #006699;
-	border-bottom: solid 5px #006699;
-	width: 200px;
-	float: left;
-	background: #FFF;
+    overflow: auto;
+    width: 200px;
+    float: left;
+    border-top: 5px solid #006699;
+    border-bottom: 3px solid #006699;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: relative;
+    font-size: 95%;
 }
-
-.content{
-	width: 37em;
+.content {
+    width: 37em;
+    margin-bottom: 20px;
+    position: relative;
+    float: left;
+}
+.sidebar2 {
+    width: 200px;
+    float: left;
+    background-color: #CCFFCC;
+    overflow: auto;
+    border-top: 5px solid #006699;
+    border-bottom: 3px solid #006699;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 95%;
+}
+#footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    clear: both;
+    color: #FFFFAA;
+    font-size: 95%;
+    background-color: #009900;
+}
+.columnwrapper {
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
-	float: left;
-	position: relative;
-}
-
-.sidebar2{
-	border-top: solid 5px #006699;
-	border-bottom: solid 5px #006699;
-	width: 200px;
-	float: left;
-	background-color: #cfc;
 	overflow: auto;
 }
-
-footer{
-	padding: 10px 10%;
-	text-align: center;
-	background-color: #090;
-	position: relative;
-	clear: both;
+.blockquote {
+	margin: 0px 0px 5px 0px;
+	padding: 0px .5em;
+}
+.blockquote-cite {
+	display: block;
 	font-size: 90%;
-	margin-top: 20px;
+	text-align: left;
+	font-style:italic;
+	padding-right: .5em;
 }
